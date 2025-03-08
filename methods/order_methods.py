@@ -15,7 +15,7 @@ class OrderMethods:
     @allure.step('Создаем заказ, указывая нужные ингредиенты Без авторизации')
     def create_order_without_auth(self, order_data):
         response = requests.post(f'{Urls.BASE_URL}{Urls.ORDERS_URL}', json=order_data)
-        print(response.json())
+        # print(response.json())
         return response
 
     @allure.step('Создаем заказ, указывая нужные ингредиенты C авторизацией')
@@ -32,6 +32,6 @@ class OrderMethods:
         headers = {
             "Authorization": f"Bearer {token}"
         }
-        response = requests.post(f'{Urls.BASE_URL}{Urls.ORDERS_URL}', headers=headers)
+        response = requests.get(f'{Urls.BASE_URL}{Urls.ORDERS_URL}', headers=headers)
         print(response.json())
         return response

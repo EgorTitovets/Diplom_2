@@ -38,3 +38,17 @@ USER_DATA_CHANGE_EMAIL = {
 USER_DATA_CHANGE_NAME = {
     "name": "user1"
 }
+
+INGREDIENTS_FOR_BURGER = {
+    "ingredients": ["61c0c5a71d1f82001bdaaa6f", "61c0c5a71d1f82001bdaaa70", "61c0c5a71d1f82001bdaaa71"]
+}
+
+INGREDIENTS_FOR_BURGER_EMPTY = {
+    "ingredients": []
+}
+INGREDIENTS_FOR_BURGER_INCORRECT = {
+    "ingredients": ["куку"]
+}
+
+USER_DATA_FOR_CREATE_ORDER = {"email": "testcreateorder@test.ru",
+                              "password": "123"}

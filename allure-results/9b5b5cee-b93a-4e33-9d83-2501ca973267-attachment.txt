@@ -1,0 +1,3 @@
+{'success': True, 'user': {'email': 'testchange@test.ru', 'name': 'change_user'}, 'accessToken': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3Y2M4ZjNjOWVkMjgwMDAxYjU4Zjg4ZSIsImlhdCI6MTc0MTQ1OTI2MCwiZXhwIjoxNzQxNDYwNDYwfQ.8hEmoSeRSE0sJfhjx2PB-Oc0CGRyCE-TiGcLz7KV86g', 'refreshToken': 'e6843f9b8a687655fb939e1a894d61f7813fd16409f5e482b6fc6e2606d636d985438699b6e9b52f'}
+{'success': False, 'message': 'You should be authorised'}
+{'success': True, 'message': 'User successfully removed'}
