@@ -45,4 +45,8 @@ class UserMethods:
         print(response.json())
         return response
 
-
+    @allure.step("Получаем accessToken")
+    def get_access_token(self, response):
+        response_json = response.json()
+        access_token = response_json["accessToken"].split(" ")[1]
+        return access_token
