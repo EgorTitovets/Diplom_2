@@ -1,8 +1,7 @@
 import allure
 from methods.order_methods import OrderMethods
 from methods.user_methods import UserMethods
-from data import INGREDIENTS_FOR_BURGER, USER_DATA_FOR_CREATE_ORDER, INGREDIENTS_FOR_BURGER_EMPTY, \
-    INGREDIENTS_FOR_BURGER_INCORRECT
+from data import USER_DATA_FOR_CREATE_ORDER
 
 
 class TestGetOrder:
