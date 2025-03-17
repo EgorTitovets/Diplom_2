@@ -43,8 +43,10 @@ class TestChangeUserData:
         change_data = user_api.change_user_data(USER_DATA_CHANGE_NAME, access_token_empty)
         assert change_data.status_code == 401, f"Ожидался код 401, но получили {change_data.status_code}"
         change_data_json = change_data.json()
+        expected_success = False
+        expected_error_message = "You should be authorised"
         assert change_data_json.get(
-            'success') is False, f"Ожидалось success=False, но получили {change_data_json.get('success')}"
+            'success') is expected_success, f"Ожидалось success={expected_success}, но получили {change_data_json.get('success')}"
         assert change_data_json.get(
-            'message') == "You should be authorised", f'Ожидалось "message": "You should be authorised"", но получили {change_data_json.get('message')}'
+            'message') == expected_error_message, f'Ожидалось "message": {expected_error_message}", но получили {change_data_json.get('message')}'
         user_api.delete_user(access_token)
